@@ -58,7 +58,7 @@ function removeFromCart(item) {
   var remove = false
   while (i < cart.length) {
     if (getCart()[i].hasOwnProperty(item)) {
-      cart.splice(i)
+      return cart[i]
       remove = true
     }
     i++
