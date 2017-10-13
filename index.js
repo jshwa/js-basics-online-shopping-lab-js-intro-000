@@ -56,7 +56,13 @@ function total() {
 function removeFromCart(item) {
   var i = 0
   var remove = false
+  while (i < cart.length) {
+    if (getCart()[i].hasOwnProperty(item)) {
 
+      remove = true
+    }
+    i++
+  }
     if (!remove) {
       console.log(`That item is not in your cart.`)
     }
