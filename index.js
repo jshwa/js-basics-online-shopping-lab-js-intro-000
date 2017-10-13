@@ -60,8 +60,8 @@ function removeFromCart(item) {
     if (getCart()[i].hasOwnProperty(item)) {
       cart.splice(i)
       remove = true
-      i++
     }
+    i++
   }
     if (!remove) {
       console.log(`That item is not in your cart.`)
